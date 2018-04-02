@@ -545,7 +545,7 @@ function give_require_billing_address( $payment_mode ) {
 
 	$return = false;
 
-	if ( isset( $_POST['billing_country'] ) || did_action( "give_{$payment_mode}_cc_form" ) || did_action( 'give_cc_form' ) ) {
+	if ( isset( $_POST['billing_country'] ) || did_action( "give_{$payment_mode}_cc_form" ) ) {
 		$return = true;
 	}
 
